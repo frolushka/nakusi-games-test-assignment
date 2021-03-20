@@ -12,4 +12,4 @@ Bonus: support multiple bomb types.
 ## Implementation
 My implementation have a clean self-documentated code architecture. Views represented by Unity geometry primitives.
 
-Time consumed: 3 hours.
+Time consumed: 3 hours 20 minutes.

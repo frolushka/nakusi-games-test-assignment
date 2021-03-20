@@ -6,8 +6,6 @@ namespace NakusiGames.Components
     [RequireComponent(typeof(Rigidbody))]
     public class Bomb : MonoBehaviour
     {
-        // [SerializeField] private GameObject explosionPrefab;
-        
         private IExplosionCore _explosion;
 
         public void Initialize(IExplosionCore explosion)
@@ -17,7 +15,6 @@ namespace NakusiGames.Components
         
         private void OnCollisionEnter(Collision other)
         {
-            // Instantiate(explosionPrefab);
             _explosion.Explode(transform.position);
             Destroy(gameObject);
         }
